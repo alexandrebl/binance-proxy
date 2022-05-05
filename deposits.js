@@ -32,7 +32,7 @@ client.depositWithdrawalHistory(0)
 
             var fileName = '/crypto/deposits_' + current + '.json';
 
-            fs.appendFileSync(fileName, JSON.stringify(deposit), function (err,data) {
+            fs.appendFileSync(fileName, JSON.stringify(deposit) + '\r\n', function (err,data) {
                 if (err) {
                   return console.log(err);
                 }
