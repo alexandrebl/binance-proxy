@@ -22,14 +22,14 @@ client.depositWithdrawalHistory(0)
         let amount = 0.0;
 
         for(var index = 0; index < deposits.length; index++){
-            if(deposits[index].orderNo == "8a5e5e04-bc73-4e39-8302-fcd26518dbe3") continue;
-            if(deposits[index].orderNo == "4200a215-7744-4074-9573-2e93364389b1") continue;
-
+            
             var deposit = deposits[index];
 
             console.log(JSON.stringify(deposit));
 
-            amount = amount + Number.parseFloat(deposits[index].amount);
+            if(deposit.status == "Successful") {
+                amount = amount + Number.parseFloat(deposits[index].amount);
+            }
 
             var fileName = '/crypto/deposits_' + current + '.json';
 
