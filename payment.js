@@ -17,8 +17,6 @@ client.paymentHistory(0)
         console.log("Error on try to get payment information");
     }
 
-    console.log(response.data);
-
     if (!fs.existsSync("/crypto")) {
         fs.mkdirSync("/crypto", 0777);
     }
