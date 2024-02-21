@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/alexandrebl/binance-proxy#readme",
   "dependencies": {
-    "@binance/connector": "^1.8.1",
-    "binance": "^2.0.29",
+    "@binance/connector": "^3.2.0",
+    "binance": "^2.10.1",
     "dateformat": "^5.0.3",
     "moment": "^2.29.3",
     "node-binance-api": "^0.13.1"
